@@ -1,5 +1,10 @@
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
+  color: salmon;
 }
 
 nav {
@@ -12,34 +17,16 @@ nav {
 
 header {
   padding: 5vmin;
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba(66, 134, 244, 0.5),
-    rgba(66, 134, 244, 0.5) 1px,
-    rgba(66, 134, 244, 0.3) 1px,
-    rgba(66, 134, 244, 0.3) 10px,
-    rgba(135, 234, 49, 0.5) 10px,
-    rgba(135, 234, 49, 0.5) 11px,
-    rgba(135, 234, 49, 0.3) 11px,
-    rgba(135, 234, 49, 0.3) 20px
-  );
+  background: rgba(135, 234, 49, 0.3);
   border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 footer {
   padding: 8vmin;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(247, 49, 197, 0.5),
-    rgba(247, 49, 197, 0.5) 1px,
-    rgba(247, 49, 197, 0.3) 1px,
-    rgba(247, 49, 197, 0.3) 10px,
-    rgba(244, 238, 66, 0.5) 10px,
-    rgba(244, 238, 66, 0.5) 11px,
-    rgba(244, 238, 66, 0.3) 11px,
-    rgba(244, 238, 66, 0.3) 20px
-  );
+  background: rgba(135, 234, 49, 0.3);
   border-top: 1px solid rgb(197, 197, 197);
+  color: gray;
+  font-size: 1.1rem;
 }
 
 #title {
