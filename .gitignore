@@ -3,3 +3,5 @@ yarn-error.log
 yarn.lock
 bundle.js
 bundle.js.map
+bundle.css
+bundle.min.css

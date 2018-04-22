@@ -13,6 +13,15 @@ module.exports = {
         exclude: resolve(__dirname, 'node_modules'),
         use: 'babel-loader'
       },
+      {
+        test: /\.pug$/,
+        use: [
+          "file-loader?name=[path][name].html",
+          "extract-loader",
+          "html-loader",
+          "pug-html-loader"
+        ]
+      }
     ]
   },
   devtool: 'source-map',

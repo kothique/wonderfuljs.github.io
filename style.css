@@ -16,9 +16,17 @@ nav {
 }
 
 header {
-  padding: 5vmin;
+  padding: 10vmin;
   background: rgba(135, 234, 49, 0.3);
   border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+#title {
+  margin-top: 0.5em;
+  font-size: 10vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  -webkit-text-stroke: 0.3vmin gray;
 }
 
 footer {
@@ -27,13 +35,6 @@ footer {
   border-top: 1px solid rgb(197, 197, 197);
   color: gray;
   font-size: 1.1rem;
-}
-
-#title {
-  font-size: 10vmin;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  -webkit-text-stroke: 0.3vmin gray;
 }
 
 .feature img {

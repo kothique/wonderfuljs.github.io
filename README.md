@@ -1,3 +1,7 @@
 # wonderful.js [website](https://kothique.github.io/wonderfuljs.github.io/)
 
-_An example_ of a website for a simple javascript library.
+_An example_ of a simple website for a javascript library.
+
+# TODO
+- style.css -> base.css
+  webpack postcss
