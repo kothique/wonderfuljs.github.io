@@ -9,8 +9,6 @@ html(lang="en")
 
     title wonderful.js
 
-    link(href="bundle.min.css" rel="stylesheet")
-    link(href="style.css" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Lato|Indie+Flower|Roboto" rel="stylesheet")
 
   body.m0
@@ -42,7 +40,7 @@ html(lang="en")
         h2.center.h2 #{title}
         .center
           img(href=picture)
-        p #{description}
+        block        
 
     +feature('NON-EXISTENT', '')
       p wonderful.js was not created with the intention to bring joy or comfort to your 
