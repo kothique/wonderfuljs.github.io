@@ -27,7 +27,7 @@ header {
   font-size: 12vmin;
   font-family: 'Indie Flower', sans-serif;
   color: white;
-  -webkit-text-stroke: 0.1px gray;
+  text-shadow: 0 1px gray, 0 -1px gray, -1px 0 gray, 1px 0 gray;
 }
 
 footer {
@@ -41,6 +41,8 @@ footer {
 .feature img {
   width: 200px;
   height: 200px;
+  display: block;
+  border: 0;
 }
 
 .feature h2 {
