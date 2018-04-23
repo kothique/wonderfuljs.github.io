@@ -159,7 +159,7 @@ exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/lib
 
 
 // module
-exports.push([module.i, "body{overflow-x:hidden}a{text-decoration:none;color:#07c}nav{position:absolute;top:0;left:0;right:0;height:60px}header{padding:10vmin;background:rgba(135,234,49,.3);border-bottom:1px solid #c5c5c5}#title{margin-top:.5rem;margin-bottom:.5rem;font-size:12vmin;font-family:Indie Flower,sans-serif;color:#fff;-webkit-text-stroke:.1px gray}footer{padding:8vmin;background:rgba(135,234,49,.3);border-top:1px solid #c5c5c5;color:gray;font-size:1.1rem}.feature img{width:200px;height:200px}.feature h2{margin-top:0;letter-spacing:.2rem;font-family:Lato,sans-serif}.feature p{text-align:justify;font-size:1.2rem;line-height:1.8rem;font-family:Roboto,sans-serif}", ""]);
+exports.push([module.i, "body{overflow-x:hidden}a{text-decoration:none;color:#07c}nav{position:absolute;top:0;left:0;right:0;height:60px}header{padding:10vmin;background:rgba(135,234,49,.3);border-bottom:1px solid #c5c5c5}#title{margin-top:.5rem;margin-bottom:.5rem;font-size:12vmin;font-family:Indie Flower,sans-serif;color:#fff;text-shadow:0 1px gray,0 -1px gray,-1px 0 gray,1px 0 gray}footer{padding:8vmin;background:rgba(135,234,49,.3);border-top:1px solid #c5c5c5;color:gray;font-size:1.1rem}.feature img{width:200px;height:200px;display:block;border:0}.feature h2{margin-top:0;letter-spacing:.2rem;font-family:Lato,sans-serif}.feature p{text-align:justify;font-size:1.2rem;line-height:1.8rem;font-family:Roboto,sans-serif}", ""]);
 
 // exports
 
