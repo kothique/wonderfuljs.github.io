@@ -3,7 +3,7 @@ const { resolve } = require('path')
 module.exports = {
   entry: './index.js',
   output: {
-    path: __dirname,
+    path: resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
