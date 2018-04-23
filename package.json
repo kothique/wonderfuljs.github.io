@@ -4,7 +4,8 @@
   "description": "A website for wonderful.js - the wonderful javascript library.\u001b[D\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
   "main": "index.js",
   "scripts": {
-    "watch": "npx webpack --watch"
+    "watch": "npx webpack --watch",
+    "deploy": "./deploy.sh"
   },
   "author": "Kotik Andreev <kothique@protonmail.ch>",
   "license": "WTFPL",
