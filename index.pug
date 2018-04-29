@@ -16,8 +16,7 @@ html(lang="en")
       .right
         a.github-button(href="https://github.com/kothique/wonderfuljs.github.io" data-size="large" data-show-count="true" aria-label="Star kothique/wonderfuljs.github.io on GitHub") Star
 
-  header.center
-    h1#title wonderful#[span.italic .js]
+  header
 
   article#content.mx-auto.max-width-3.mb4
     mixin feature(title,picture,left=true)
@@ -25,7 +24,7 @@ html(lang="en")
         .flex.flex-stretch
           if left
             .flex-none
-              img(href=picture)
+              .feature-pic(style=`background-image: url(${picture});`)
             .flex-auto.ml4
               h2 #{title}
               block
@@ -34,24 +33,27 @@ html(lang="en")
               h2 #{title}
               block
             .flex-none
-              img(href=picture)
+              .feature-pic(style=`background-image: url(${picture});`)
 
       section.feature.sm-hide.mx3.mt4
         h2.center.h2 #{title}
         .center
-          img(href=picture)
+          img(src=picture)
         block        
 
-    +feature('NON-EXISTENT', '')
-      p wonderful.js was not created with the intention to bring joy or comfort to your 
-        cheerless development workflow. So nothing to install, no skill to master, and 
-        complete abscence of  boring docs or dull tutorials
-    +feature('INFINITE POTENTIAL', '', false)
-      p wonderful.js does not exist, so with its limitlessness literally anything you can
-        think of is possible
-    +feature('SEAMLESS INTEGRATION')
+    +feature('NON-EXISTENT', 'images/1.jpg')
+      p wonderful.js was not created with the intent to bring joy or comfort to your 
+        | cheerless development workflow. So nothing to install, no skill to master, and 
+        | complete abscence of  boring docs or dull tutorials
+    +feature('INFINITE POTENTIAL', 'images/2.jpg', false)
+      p wonderful.js does not exist, so with its limitlessness literally anything you can 
+        | think of is possible
+    +feature('SEAMLESS INTEGRATION', 'images/3.jpg')
       p wonderful.js is guaranteed#[a(href="#ref1") *] to fit perfectly into any of your existing projects
       p#ref1: small *&nbsp;-&nbsp;actually, no
+    +feature('ZEN', 'images/4.jpg', false)
+      p wonderful.js accepts emptiness as its true nature and avoids holding onto concepts 
+        | and ideas, so it has no expectations about you that may cause you to be unhappy
   
   footer.center
     | created by #[a(href="https://github.com/kothique") Kotik Andreev], 

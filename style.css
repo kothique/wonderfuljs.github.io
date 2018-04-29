@@ -16,9 +16,10 @@ nav {
 }
 
 header {
-  padding: 10vmin;
-  background: rgba(135, 234, 49, 0.3);
   border-bottom: 1px solid rgb(197, 197, 197);
+  height: 40vmin;
+  background: url('images/title.svg') rgba(135, 234, 49, 0.3) no-repeat center center;
+  background-size: 90% 75%;
 }
 
 #title {
@@ -38,11 +39,28 @@ footer {
   font-size: 1.1rem;
 }
 
+.feature-pic {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.feature-pic::before {
+  content: ' ';
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -40px;
+  width: calc(180px + 40px * 2);
+  height: calc(180px + 40px * 2);
+  background-position: center center;
+  background-size: cover;
+  background-image: inherit;
+  background-repeat: no-repeat;
+}
+
 .feature img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  border: 0;
+  max-width: 70%;
 }
 
 .feature h2 {

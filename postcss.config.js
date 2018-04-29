@@ -7,6 +7,7 @@ module.exports = {
     'postcss-calc': {},
     'postcss-color-function': {},
     'postcss-discard-comments': {},
+    'autoprefixer': {},
     'cssnano': {}
   }
 }

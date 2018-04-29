@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { resolve } = require('path')
 
 module.exports = {
@@ -6,6 +7,11 @@ module.exports = {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: './images/*', to: '.' }
+    ])
+  ],
   module: {
     rules: [
       {
@@ -18,7 +24,7 @@ module.exports = {
         use: [
           "file-loader?name=[path][name].html",
           "extract-loader",
-          "html-loader",
+          { loader: "html-loader", options: { attrs: false } },
           "pug-html-loader"
         ]
       },
@@ -26,12 +32,16 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'css-loader', options: { importLoaders: 1, url: false } },
           'postcss-loader'
         ]
       }
     ]
   },
   devtool: 'source-map',
-  mode: 'development'
+  mode: 'development',
+  devServer: {
+    contentBase: resolve(__dirname, 'dist'),
+    watchContentBase: true
+  }
 }
